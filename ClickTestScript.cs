@@ -59,71 +59,60 @@ public class ClickTestScript : MonoBehaviour
 
     public void BrokenGlassEffect()
     {
-        if (Clicks == 30)
+        int SwitchNumb = 0;
+        switch (SwitchNumb)
         {
-            CrackedGlass[0].SetActive(true);
-        }
-        else if (Clicks == 40)
-        {
-            CrackedGlass[0].GetComponent<Animator>().Play("b1", -1, 0.0f);
-        }
-        else if (Clicks == 50)
-        {
-            CrackedGlass[1].SetActive(true);
-        }
-        else if (Clicks == 60)
-        {
-            CrackedGlass[1].GetComponent<Animator>().Play("b1", -1, 0.0f);
-            BrokenGlassSound.Play();
-        }
-        else if (Clicks == 70)
-        {
-            CrackedGlass[2].SetActive(true);
-        }
-        else if (Clicks == 75)
-        {
-            CrackedGlass[2].GetComponent<Animator>().Play("b2", -1, 0.0f);
-            BrokenGlassSound.Play();
-        }
-        else if (Clicks == 80)
-        {
-            CrackedGlass[3].SetActive(true);
-        }
-        else if (Clicks == 85)
-        {
-            CrackedGlass[3].GetComponent<Animator>().Play("b2", -1, 0.0f);
-            BrokenGlassSound.Play();
-        }
-        else if (Clicks == 90)
-        {
-            CrackedGlass[4].SetActive(true);
-        }
-        else if (Clicks == 95)
-        {
-            CrackedGlass[4].GetComponent<Animator>().Play("b2", -1, 0.0f);
-            BrokenGlassSound.Play();
-        }
-        else if (Clicks == 100)
-        {
-            CrackedGlass[5].SetActive(true);
-        }
-        else if (Clicks == 105)
-        {
-            CrackedGlass[5].GetComponent<Animator>().Play("b2", -1, 0.0f);
-            BrokenGlassSound.Play();
-        }
-        else if (Clicks == 110)
-        {
-            CrackedGlass[6].SetActive(true);
-        }
-        else if (Clicks == 115)
-        {
-            CrackedGlass[7].GetComponent<Animator>().Play("b2", -1, 0.0f);
-        }
-        else if (Clicks == 130)
-        {
-            CrackedGlass[7].SetActive(true);
-            BrokenGlassSound2.Play();
-        }
+            case 30:
+                ImageGlass[0].SetActive(true);
+                break;
+            case 40:
+                ImageGlass[0].GetComponent<Animator>().Play("b1", -1, 0.0f);
+                break;
+            case 50:
+                ImageGlass[1].SetActive(true);
+                break;
+            case 60:
+                ImageGlass[1].SetActive(true); ImageGlass[1].GetComponent<Animator>().Play("b1", -1, 0.0f);
+                glass1.Play();
+                break;
+            case 70:
+                ImageGlass[2].SetActive(true);
+                break;
+            case 75:
+                ImageGlass[2].GetComponent<Animator>().Play("b2", -1, 0.0f);
+                glass1.Play();
+                break;
+            case 80:
+                ImageGlass[3].SetActive(true);
+                break;
+            case 85:
+                ImageGlass[3].GetComponent<Animator>().Play("b2", -1, 0.0f);
+                glass1.Play();
+                break;
+            case 90:
+                ImageGlass[4].SetActive(true);
+                break;
+            case 95:
+                ImageGlass[4].GetComponent<Animator>().Play("b2", -1, 0.0f);
+                glass1.Play();
+                break;
+            case 100:
+                ImageGlass[5].SetActive(true);
+                break;
+            case 105:
+                ImageGlass[5].GetComponent<Animator>().Play("b2", -1, 0.0f);
+                glass1.Play();
+                break;
+            case 110:
+                ImageGlass[6].SetActive(true);
+                break;
+            case 115:
+                ImageGlass[6].GetComponent<Animator>().Play("b2", -1, 0.0f);
+                break;
+            case 130:
+                ImageGlass[7].SetActive(true);
+                galss2.Play();
+                break;
+        }      
     }
 }
